@@ -1,0 +1,78 @@
+---
+titleTag: Call, Email, or Visit Nathan Airchime in South Windham, CT - Contact Us
+pageName: Contact
+description: Contact our Main Office in South Windham, CT. via our form or phone number. 
+pageClass: contactCap
+pageSlug: contact/
+layout: 'base.njk'
+---
+
+<div class="contactWrapper container mt-0 mt-md-4 py-5">
+  <div class="row">
+    <div class="col-md-6 pe-md-5">
+      <h1 class="mb-4 pb-2">Contact us today.<br>We're happy to help.</h1>
+      <hr class="mainSep" size="4" />
+      <p class="contactUsMsg pt-3">We are here to support our industry and our customers. Public safety is our number one priority. Additionally, Nahthan Airchime values your confidentiality and you can rest assured we will not give your information to any outside sources and you can opt out at any time. We thank you and promise to get back to you promptly.</p>
+      <div class="calloutHQ p-md-5 px-4 pt-4 pb-4 my-5">
+        <h2>Micro Precision Headquarters</h2>
+        <div class="chqContact mt-4">
+          <div class="chqAddress"><p class="m-0">1102 Windham Road<br>South Windham, CT 06266</p></div>
+          <div class="chqNumbers"><p class="m-0">Call: <b>860.423.4575</b><br>Fax: <b>860.450.0519</b></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 ps-md-5">
+      <h2 class="mb-4">Have a question? Send us an email.</h2>
+      <form name="contactprl" method="POST" data-netlify="true" netlify-honeypot="caught-field" id="formnis" action="/contact-success/">
+        <p class="d-none">
+          <label>Don't fill this out if you are human:<input name="caught-field" /></label>
+        </p>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-floating mb-3">
+              <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" data-rule-required="true" data-msg-required="Please enter your first name" required/>
+              <label for="fiFirstName">First Name</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating mb-3">
+              <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" data-rule-required="true" data-msg-required="Please enter your last name" required />
+            <label for="fiLastName">Last Name</label>
+            </div>
+          </div>
+        </div>
+         <div class="form-floating mb-3">
+           <input type="email" class="form-control" id="fiEmail" name="emailAddress" placeholder="Email Address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" required />
+           <label for="fiEmail">Email address</label>
+         </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="fiPhone" type="tel" name="phone" data-rule-required="true" placeholder="Phone" data-msg-required="Please enter your phone number" required />
+          <label for="fiPhone">Phone</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+            
+            <select class="form-select" name="inquirytype" id="floatingSelect" aria-label="Select your Service Inquiry" size="1" >
+              <option value="" selected disabled>&mdash;</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Careers & Benefits">Careers &amp; Benefits</option>
+              <option value="Customer Service">Customer Service</option>
+              <option value="Technical Support">Technical Support</option>
+            </select>
+            <label for="floatingSelect">Please select one</label>
+        </div>
+
+            <div class="form-floating">
+              <textarea class="form-control" name="message" placeholder="Your message" id="fiMessage" style="height: 8em" required></textarea>
+              <label for="fiMessage">Your message</label>
+        </div>
+
+        <p><button type="submit" class="btn btn-primary my-4">Send a Message</button></p>
+      </form>
+      
+      
+    </div>
+  </div>
+</div>
+
+{% include './_includes/raq.njk' %}

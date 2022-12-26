@@ -1,0 +1,102 @@
+---
+titleTag: Customize Your Quote at Nathan Airchime
+pageName: Request a Quote
+description: While there are other companies that supply air horns, there's only one Nathan Airchime.
+pageClass: raqCap
+pageSlug: request-a-quote/
+layout: 'base.njk'
+---
+
+<section class="container contentLeadIn">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center pt-5 pb-4 pb-md-4">
+      <h1 class="mb-4">We can do great work together.</h1>
+      <p>Starting the process is simple and easy. We have over 80 years of experience crafting the finest airhorns available from anyone anywhere. We're confident we can meet your requirements in a timely manner &mdash; all at a competitive price. After all, we've earned the trust of some of the country's most renowned locomotive manufacturers. While there are other companies that supply air horns, there's only one Nathan Airchime.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr class="mainSep mb-5" size="4" />
+    </div>
+  </div>
+</section>
+<section class="container mb-5">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h2 class="lsycq mb-4">Let's start your customized quote.</h2>
+      <form name="requestaquotena" method="POST" data-netlify="true" netlify-honeypot="caught-field" id="formnis" action="/request-a-quote-success/">
+        
+        <p class="d-none">
+          <label>Don't fill this out if you're human:<input name="caught-field" /></label>
+        </p>
+        <div class="row">
+          <div class="col-md-6 pe-md-5">
+            <h4 class="raqFormTitles mb-4">Tell us a bit about you:</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" data-rule-required="true" data-msg-required="Please enter your first name" required />
+                  <label for="fiFirstName">First Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" data-rule-required="true" data-msg-required="Please enter your first name" required />
+                <label for="fiLastName">Last Name</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" name="emailAddress" id="fiEmail" placeholder="Email Address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" required />
+              <label for="fiEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" id="fiPhone" type="tel" name="phone" placeholder="Phone" data-rule-required="true" data-msg-required="Please enter your phone number" required />
+              <label for="fiPhone">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="fiCompanyName" name="companyname" placeholder="Company Name" required />
+              <label for="fiCompanyName">Company Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="fiYourTitle" name="title" placeholder="Your Title" required />
+              <label for="fiYourTitle">Your Title</label>
+            </div>
+          </div>
+          <div class="col-md-6 ps-md-5">
+              <h4 class="raqFormTitles mb-4">How can we help you?</h4>
+            
+            <div class="form-floating mt-3">
+              <textarea class="form-control" name="details" placeholder="Please provide a few details about your project." id="fiMessage" required></textarea>
+              <label for="fiMessage">Please provide a few details about your needs.</label>
+            </div>
+            
+            <p><button type="submit" class="btn btn-primary my-4">Start Your Quote</button></p>
+          </div>
+        </div>
+        
+            
+      </form>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+      </svg>
+      <div class="alert alert-success align-items-center" role="alert" style="display:none;">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+          Thank you, your message was sent successfully. Someone from our office will get back to you soon.
+        </div>
+      </div>
+      <div class="alert alert-danger align-items-center" role="alert" style="display:none;">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+        <div>
+          There was an error trying to send your message. Please try again later.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
