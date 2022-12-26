@@ -122,7 +122,14 @@ legend { float: none; font-size: inherit; }
 .home_icon_wrapper svg { fill:var(--maincta); }
 
 .ci_container { border:1px solid rgb(0 0 0 / 10%); height: 100%; }
-	.ci_container svg { fill:var(--maincta); width:3.875rem; }
+	.ci_container .ci_icon { fill:var(--maincta); width:3.875rem; }
+	.ci_container .ci_link_icon { width: 8px; }
+	.ci_container p a { text-decoration: none; color: var(--maincta); transition: all 0.3s ease; }
+		.ci_container p a svg { fill:var(--maincta); transition: all 0.3s ease; }
+		.ci_container p a:hover,
+		.ci_container p a:focus { color: var(--darkTeal); }
+			.ci_container p a:hover svg,
+			.ci_container p a:focus svg { fill:var(--darkTeal); }
 
 .companies_header { background-color: var(--darkTeal); font-size: 1.05em; font-weight: 900; text-transform: uppercase; color: #97B4BB; letter-spacing: 1px; }
 
