@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6 { color: var(--darkTeal); }
 
 h5.subTitle { font-size: 1.05em; font-weight: 900; text-transform: uppercase; color: #8d8d8d; letter-spacing: 1px; }
 
+a {	color: var(--maincta);text-decoration: none; }
+a:hover { color: var(--darkTeal); }
+
 @media (min-width: 1200px) {
 	.h1, h1 { font-size: 2.25rem; }
 }
@@ -43,10 +46,10 @@ h5.subTitle { font-size: 1.05em; font-weight: 900; text-transform: uppercase; co
 }
 
 
-.btn-primary { background-color: var(--maincta); border-color: var(--maincta); border-width: 2px; }
+.btn-primary { background-color: var(--maincta); border-color: var(--maincta); border-width: 2px; fill:#fff; }
 .btn-primary:hover,
 .btn-check:focus+.btn-primary, 
-.btn-primary:focus { background-color: rgba(255,255,255,0); border-color: var(--maincta); color: var(--maincta); box-shadow: none; }
+.btn-primary:focus { background-color: rgba(255,255,255,0); border-color: var(--maincta); color: var(--maincta); box-shadow: none; fill: var(--maincta); }
 .btnondark.btn-primary:hover { color: #FFF; }
 
 
@@ -276,7 +279,7 @@ legend { float: none; font-size: inherit; }
 	height: 100%;
 	flex-direction: column;
 }
-.about-john-m { background-image: url('/images/NIS_Bios_John-Morgan.jpg'); }
+.about-james-w { background-image: url('/images/NIS_Bios_James-Waters.jpg'); }
 .about-devin-c { background-image: url('/images/NIS_Bios_Devin-Corn.jpg'); }
 .about-michael-l { background-image: url('/images/NIS_Bios_Mike-LaFleur.jpg'); }
 
@@ -318,12 +321,13 @@ legend { float: none; font-size: inherit; }
 #fiMessage { height:15.1rem; }
 
 /* === CONTACT US === */
-.no-webp .contactCap { background-image: url("/images/NA_Contact.jpg"); }
-.webp .contactCap { background-image: url("/images/NA_Contact.webp"); }
+.no-webp .contactCap { background-image: url("/images/NIS_Contact.jpg"); }
+.webp .contactCap { background-image: url("/images/NIS_Contact.webp"); }
 .contactUsMsg { font-size:1.25em; }
 .calloutHQ { background-color: rgba(216,226,231,0.45); }
 .contactWrapper h2 { font-size: 1.5em; }
 .chqContact { display:grid; grid-template-columns: auto auto; }
+.contact_locations { font-size: 0.875rem !important; }
 
 /* === CAREERS === */
 .no-webp .careersCap { background-image: url("/images/NA_Careers.jpg"); }
