@@ -188,7 +188,11 @@
 
 <section id="companies">
   <div class="text-center companies_header py-3">&mdash; COMPANIES &mdash;</div>
-  <div class="company_item company_prl">
+  <div data-jarallax data-speed="0.2" class="company_item jarallax">
+    <picture>
+        <source srcset="/images/prl-banner.webp">
+        <img class="jarallax-img" src="/images/prl-banner.jpg" alt="PRL Foundry Pouring">
+    </picture>
     <div class="container">
       <div class="row">
         <div class="col-md-5 py-4">
@@ -199,7 +203,11 @@
       </div>
     </div>
   </div>
-  <div class="company_item company_mpi">
+  <div data-jarallax data-speed="0.2" class="company_item jarallax">
+    <picture>
+        <source srcset="/images/MP_home.webp">
+        <img class="jarallax-img" src="/images/MP_home.jpg" alt="Micro Precision">
+    </picture>
     <div class="container">
       <div class="row">
         <div class="col-md-5 py-4">
@@ -212,7 +220,11 @@
       </div>
     </div>
   </div>
-  <div class="company_item company_na">
+  <div data-jarallax data-speed="0.2" class="company_item jarallax">
+    <picture>
+        <source srcset="/images/NA_home.webp">
+        <img class="jarallax-img" src="/images/NA_home.jpg" alt="Nathan Airchime">
+    </picture>
     <div class="container">
       <div class="row">
         <div class="col-md-5 py-4">
@@ -294,16 +306,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-	<script src="/js/scripts.js"></script>
-  <script>
-	Modernizr.on('webp', function(result) {
-	  if (result) {
-		document.body.className += 'webp';
-	  } else {
-		document.body.className += 'no-webp';
-	  }
-	});
-  
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>

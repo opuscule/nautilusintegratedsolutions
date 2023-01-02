@@ -34,6 +34,16 @@ a:hover { color: var(--darkTeal); }
 .navbar-dark .navbar-toggler { color: #FFF; background-color: var(--maincta); }
 .navbar-toggler:focus { box-shadow:none; }
 
+@media all and (min-width: 992px) {
+	.navbar-dark .navbar-nav .nav-link { color: #FFF !important; }
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+	.navbar-nav .dropdown .dropdown-menu { background-color: rgb(214 223 228 / 94%); border-radius: 0 !important; border-width:0 0 0.25rem 0; border-color: var(--maincta); border-style: solid; }
+	.navbar-nav .nav-item .dropdown-menu .dropdown-item  { color: var(--darkTeal) !important; text-align: center; }
+	.dropdown-item.active, .dropdown-item:active { background-color: #e9ecef !important; }
+}	
+
 @media screen and (min-width:768px) {
 .navbar-nav .nav-item a.btnondark:hover,
 .navbar-nav .nav-item a.btnondark:focus { color:#FFF; }
@@ -41,8 +51,9 @@ a:hover { color: var(--darkTeal); }
 @media screen and (max-width:992px) {
 	.navbar-nav { background-color: #FFF; }
 	.navbar-nav .nav-item.active a { border-bottom: none; color: var(--maincta); }
-	.navbar-nav .nav-item a { color: var(--darkTeal); font-weight: 500; display: block; }
+	.navbar-nav .nav-item a { color: var(--darkTeal) !important; font-weight: 500; display: block; text-align: center; }
 	.nav-item .btn-primary.btnondark { padding: 4px 0; background: none; border: none; font-size: inherit; }
+	.nav-item .dropdown-menu { border:none !important; }
 }
 
 
@@ -328,13 +339,13 @@ legend { float: none; font-size: inherit; }
 .contactWrapper h2 { font-size: 1.5em; }
 .chqContact { display:grid; grid-template-columns: auto auto; }
 .contact_locations { font-size: 0.875rem !important; }
+.no-webp .contact_joinourteam_cta { background-image: url("/images/NIS_CTA_Careers.jpg"); background-size: cover; background-position: center center; }
+.webp .contact_joinourteam_cta { background-image: url("/images/NIS_CTA_Careers.webp"); background-size: cover; background-position: center center; }
+
 
 /* === CAREERS === */
-.no-webp .careersCap { background-image: url("/images/NA_Careers.jpg"); }
-.webp .careersCap { background-image: url("/images/NA_Careers.webp"); }
-.benefitsList { -webkit-column-count: 2; -webkit-column-gap: 2em; -moz-column-count: 2; -moz-column-gap: 2em; column-count: 2; column-gap: 2em; }
-.careersList { background-color: rgb(216 226 231 / 0.25); }
-.afApplication { background-position: center center; }
+.no-webp .careersCap { background-image: url("/images/NIS_Careers.jpg"); }
+.webp .careersCap { background-image: url("/images/NIS_Careers.webp"); }
 .no-webp .afApplication { background-image: url("/images/NA_CTA_Careers.jpg"); }
 .webp .afApplication { background-image: url("/images/NA_CTA_Careers.webp"); }
 
@@ -342,12 +353,26 @@ legend { float: none; font-size: inherit; }
 .afApplication h1, .afApplication p { color: #FFF; }
 
 @media screen and (max-width:540px) {
-	.careersCap { background-position: 70% center; }
+	.careersCap { background-position: 85% center; }
 }
 
 /* === PRIVACY POLICY === */
 .no-webp .privacyCap { background-image: url("/images/NA_Privacy.jpg"); }
 .webp .privacyCap { background-image: url("/images/NA_Privacy.webp"); }
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 /* === FOOTER === */
 footer#footer { background-color: var(--darkTeal); }
