@@ -341,6 +341,7 @@ legend { float: none; font-size: inherit; }
 .contact_locations { font-size: 0.875rem !important; }
 .no-webp .contact_joinourteam_cta { background-image: url("/images/NIS_CTA_Careers.jpg"); background-size: cover; background-position: center center; }
 .webp .contact_joinourteam_cta { background-image: url("/images/NIS_CTA_Careers.webp"); background-size: cover; background-position: center center; }
+.raq_btn svg { width:1.125rem; height:1.125rem; }
 
 
 /* === CAREERS === */
