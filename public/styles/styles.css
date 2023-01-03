@@ -355,8 +355,8 @@ legend { float: none; font-size: inherit; }
 }
 
 /* === PRIVACY POLICY === */
-.no-webp .privacyCap { background-image: url("/images/NA_Privacy.jpg"); }
-.webp .privacyCap { background-image: url("/images/NA_Privacy.webp"); }
+.no-webp .privacyCap { background-image: url("/images/privacy-banner.jpeg"); }
+.webp .privacyCap { background-image: url("/images/privacy-banner.webp"); }
 
 .jarallax {
   position: relative;
