@@ -126,9 +126,6 @@ legend { float: none; font-size: inherit; }
 	.tceContent h5 { color: #c6c6c6; font-size: 1.12em;font-weight: 900; }
 
 .homeBannerCallout { background-color: rgba(3,70,91,0.85); }
-	.homeBannerCallout h3 { color: #FFF; font-size: 1.18em; line-height: 1.6; }
-		.homeBannerCallout h3 a { color: #FFF; transition: all 0.25s ease; }
-			.homeBannerCallout h3 a:hover { color: var(--footerHoverColor); }
 
 .homeNISicon { fill:rgba(209,209,209,0.75); max-width: 4.25em; display: block; margin-right: 0.7em; margin-left: auto; }
 .hbct { color: rgba(255,255,255,0.75); font-weight: 700; font-size: 1.25em; background-color: rgba(3,70,91,0.85); display: inline-block; margin: 0; border-top:8px solid var(--maincta); }
