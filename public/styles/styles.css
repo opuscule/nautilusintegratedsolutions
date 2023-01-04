@@ -110,7 +110,7 @@ main ul li::before { display:inline-block;
 	border-color: var(--darkTeal);
 }
 .form-check-input:focus { box-shadow: none; }
-.btn { padding: 0.5rem 1.45rem; font-weight: 500; font-size: 1.125rem; line-height: 1.2; }
+.btn { padding: 0.5rem 1.45rem; font-weight: 500; font-size: 1.125rem;  }
 legend { float: none; font-size: inherit; }
 
 /* === HOME === */
